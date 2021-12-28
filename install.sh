@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -e
 
 fix_firehol_kernel_issue() {
@@ -11,3 +13,5 @@ fix_firehol_kernel_issue() {
   apt-get install -qy build-essential dkms
   dpkg -i /tmp/$fname
 }
+
+fix_firehol_kernel_issue
